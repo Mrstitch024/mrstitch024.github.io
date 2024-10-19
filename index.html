@@ -1,226 +1,287 @@
-
 <!DOCTYPE html>
-<html lang="en ">
-
+<html lang="cn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexo || </title>
-    <meta name="author" content="John Doe">
-    <meta name="description" content=" ">
-    <meta name="keywords" content=" ">
-    <link rel="icon" href="/images/avatar.png">
-    <link rel="stylesheet" href="/css/antd.min.css">
-    
-    <link rel="stylesheet" href="/css/maiden-theme.css">
-    
-    <script src="/js/vue.js"></script>
-    <script src="/js/antd.min.js"></script>
-<meta name="generator" content="Hexo 7.3.0"></head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
 
-<body>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-    <div id="loading"
-        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
-        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
-        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
-        <div
-            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
-            <div id="loadcontent"
-                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
-                <div>
-                    <h2>LOADING...</h2>
-                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
-                    <div>
-                        <img src="/dancingkitty.gif" alt="loading">
-                    </div>
-                </div>
-            </div>
-        </div>
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="My love chulia❤️">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MrStitch Blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="MrStitch Blog">
+<meta property="og:description" content="My love chulia❤️">
+<meta property="og:locale">
+<meta property="article:author" content="MrStitch024">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"cn","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>MrStitch Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
+  </div>
 
-    <div id="layout">
-        <transition name="into">
-            <div v-show="show_page" style="display: none;">
-                <div id="menu_show">
-                     
-<nav id="menu">
-    <div class="desktop-menu">
-        <a href="/">
-            <span class="title">Hexo</span>
-        </a>
-        
-        <a href="/">
-            <span>
-                <a-icon type="home" theme="filled" />
-            </span>
-            <span>home</span>
-        </a>
-        
-        <a href="/about">
-            <span>
-                <a-icon type="idcard" theme="filled" />
-            </span>
-            <span>about</span>
-        </a>
-        
-        <a href="/archives">
-            <span>
-                <a-icon type="folder" theme="filled" />
-            </span>
-            <span>archives</span>
-        </a>
-        
-        <a href="/like/categories">
-            <span>
-                <a-icon type="book" theme="filled" />
-            </span>
-            <span>categories</span>
-        </a>
-        
-        <a href="/like/tags">
-            <span>
-                <a-icon type="tags" theme="filled" />
-            </span>
-            <span>tags</span>
-        </a>
-        
-        <a target="_blank" rel="noopener" href="https://en.korilin.com">
-            <span>
-                <a-icon type="compass" theme="filled" />
-            </span>
-            <span>英文博客</span>
-        </a>
-        
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">MrStitch Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
     </div>
-
-    <div :class="'phone-menu ' + menu_show" id="phone-menu">
-        <div :class="'title'" @click="menu_show=!menu_show">
-            <span style="margin-right: 10px;">
-                <a-icon type="appstore" theme="filled" />
-            </span>
-            <span>Hexo</span>
-        </div>
-        <div class="items" v-show="menu_show">
-            
-            <a href="/">
-                <div class="item">
-                    <div style="min-width:20px; max-width:50px; width: 10%">
-                        <a-icon type="home" theme="filled" />
-                    </div>
-                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
-                </div>
-            </a>
-            
-            <a href="/about">
-                <div class="item">
-                    <div style="min-width:20px; max-width:50px; width: 10%">
-                        <a-icon type="idcard" theme="filled" />
-                    </div>
-                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
-                </div>
-            </a>
-            
-            <a href="/archives">
-                <div class="item">
-                    <div style="min-width:20px; max-width:50px; width: 10%">
-                        <a-icon type="folder" theme="filled" />
-                    </div>
-                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
-                </div>
-            </a>
-            
-            <a href="/like/categories">
-                <div class="item">
-                    <div style="min-width:20px; max-width:50px; width: 10%">
-                        <a-icon type="book" theme="filled" />
-                    </div>
-                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
-                </div>
-            </a>
-            
-            <a href="/like/tags">
-                <div class="item">
-                    <div style="min-width:20px; max-width:50px; width: 10%">
-                        <a-icon type="tags" theme="filled" />
-                    </div>
-                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
-                </div>
-            </a>
-            
-            <a target="_blank" rel="noopener" href="https://en.korilin.com">
-                <div class="item">
-                    <div style="min-width:20px; max-width:50px; width: 10%">
-                        <a-icon type="compass" theme="filled" />
-                    </div>
-                    <div style="min-width:100px;max-width: 150%;width: 20%;">英文博客</div>
-                </div>
-            </a>
-            
-        </div>
-        <div class="curtain" v-show="menu_show"></div>
-    </div>
-
-</nav>
-                </div>
-
-                <div id="main">
-                    <div id="home-head" style=background-image:url('home.jpg')>
-    <script>
-        var menu = document.getElementById("menu")
-        menu.className += " menu-color"
-    </script>
-     
-    <div id="home-info" class="home-info" @click="home_click">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>Hexo</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
-    </div>
-     
+  </div>
 </div>
 
 
 
-<div id="home-posts-wrap" class=>
-    <div id="home-posts">
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">10</span></a></li>
+  </ul>
+</nav>
 
-        <div id="posts">
-            
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-08-Git/01-安装及配置/">
-        <h2>
-            
-        </h2>
-    </a>
 
-    <div class="category-and-date">
-
+</header>
         
+  
+  <aside class="sidebar">
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="MrStitch024"
+      src="/images/mrstitch024.png">
+  <p class="site-author-name" itemprop="name">MrStitch024</p>
+  <div class="site-description" itemprop="description">My love chulia❤️</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Mrstitch024" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Mrstitch024" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:mrstitch024@gmail.com" title="E-Mail → mailto:mrstitch024@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
 
     </div>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/19/Template/Hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/19/Template/Hexo/" class="post-title-link" itemprop="url">[object Object]</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-10-19 23:29:45 / Modified: 23:34:20" itemprop="dateCreated datePublished" datetime="2024-10-19T23:29:45+08:00">2024-10-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-08-Git/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-08-Git/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:22:37" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:37+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:39" itemprop="dateModified" datetime="2024-10-19T23:36:39+08:00">2024-10-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>版本控制工具</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
@@ -241,46 +302,81 @@
 
 <hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-08-Git/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-07-Nginx/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-07-Nginx/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-07-Nginx/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 12:22:35" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:35+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:35" itemprop="dateModified" datetime="2024-10-19T23:36:35+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>代理web服务器</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://nginx.org/">https://nginx.org/</a></p>
@@ -292,46 +388,81 @@
 <h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
 <h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-07-Nginx/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-06-Redis/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-06-Redis/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-06-Redis/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 12:22:31" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:31+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:32" itemprop="dateModified" datetime="2024-10-19T23:36:32+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>远程字典服务</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io/</a></p>
@@ -343,46 +474,81 @@
 <h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
 <h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-06-Redis/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-05-MySql/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-05-MySql/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-05-MySql/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 12:22:29" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:29+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:28" itemprop="dateModified" datetime="2024-10-19T23:36:28+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>关系型数据库管理系统</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p> <a target="_blank" rel="noopener" href="https://www.mysql.com/">https://www.mysql.com/</a></p>
@@ -393,46 +559,81 @@
 <h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
 <h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-05-MySql/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-04-Node/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-04-Node/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-04-Node/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 12:22:27" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:27+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:25" itemprop="dateModified" datetime="2024-10-19T23:36:25+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>node(自带npm) 基于Chrome V8引擎的JavaScript运行环境</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org/</a></p>
@@ -452,46 +653,81 @@
 <hr>
 <h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-04-Node/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-03-Mavan/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-03-Mavan/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-03-Mavan/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 12:13:48" itemprop="dateCreated datePublished" datetime="2024-10-17T12:13:48+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:21" itemprop="dateModified" datetime="2024-10-19T23:36:21+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>项目构建工具&#x2F;依赖管理工具</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://maven.apache.org/">https://maven.apache.org/</a></p>
@@ -524,46 +760,81 @@
 <li>搜索maven, 更改Maven home path 和相应的setting 文件<br><img src="https://i-blog.csdnimg.cn/blog_migrate/fd86fd0394554d47e670441ed2f1896b.png" alt="请添加图片描述"></li>
 </ol>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-03-Mavan/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-02-Jdk/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-02-Jdk/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-02-Jdk/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 12:10:37" itemprop="dateCreated datePublished" datetime="2024-10-17T12:10:37+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:36:15" itemprop="dateModified" datetime="2024-10-19T23:36:15+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>Java 编程语言的开发工具包</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://www.oracle.com/">https://www.oracle.com/</a></p>
@@ -583,46 +854,81 @@
 <hr>
 <h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-02-Jdk/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/17/DevTool-01-HomeBrew/01-安装及配置/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-01-HomeBrew/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/17/Devtool/DevTool-01-HomeBrew/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
 
-        
+      <time title="Created: 2024-10-17 11:10:45" itemprop="dateCreated datePublished" datetime="2024-10-17T11:10:45+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-19 23:35:57" itemprop="dateModified" datetime="2024-10-19T23:35:57+08:00">2024-10-19</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/17
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <hr>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
 <h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>开源的包管理器，专为macOS 设计，用于简化在macOS 上安装、更新和管理软件的过程</p>
 <hr>
 <h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://brew.sh/">https://brew.sh/</a></p>
@@ -661,46 +967,75 @@
 
 <hr>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
+    
+    
+    
 
-    <a href="/2024/10/17/DevTool-01-HomeBrew/01-安装及配置/ " class="go-post">
-        阅读全文
-    </a>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
 
-<div class="post">
 
-    <a href="/2024/10/16/DevTool-01-HomeBrew/02-常用命令/">
-        <h2>
-            
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/16/Devtool/DevTool-01-HomeBrew/02-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/16/Devtool/DevTool-01-HomeBrew/02-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Untitled</a>
         </h2>
-    </a>
 
-    <div class="category-and-date">
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
 
-        
+      <time title="Created: 2024-10-16 02:38:59 / Modified: 17:40:37" itemprop="dateCreated datePublished" datetime="2024-10-16T02:38:59+08:00">2024-10-16</time>
+    </span>
 
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/10/16
-        </span>
+  
+</div>
 
-    </div>
+        </div>
+      </header>
 
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            
-            <h3 id="Homebrew-常用命令"><a href="#Homebrew-常用命令" class="headerlink" title="Homebrew 常用命令"></a>Homebrew 常用命令</h3><h4 id="软件搜索"><a href="#软件搜索" class="headerlink" title="软件搜索"></a>软件搜索</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew search TEXT|/REGEX/</span><br></pre></td></tr></table></figure>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="Homebrew-常用命令"><a href="#Homebrew-常用命令" class="headerlink" title="Homebrew 常用命令"></a>Homebrew 常用命令</h3><h4 id="软件搜索"><a href="#软件搜索" class="headerlink" title="软件搜索"></a>软件搜索</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew search TEXT|/REGEX/</span><br></pre></td></tr></table></figure>
 
 <h4 id="查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）"><a href="#查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）" class="headerlink" title="查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）"></a>查看软件相关信息（显示软件的各种信息（包括版本、<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%BA%90%E7%A0%81&spm=1001.2101.3001.7020">源码</a>地址、依赖等等）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
@@ -724,176 +1059,75 @@
 
 <h4 id="软件服务管理"><a href="#软件服务管理" class="headerlink" title="软件服务管理"></a>软件服务管理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services list <span class="comment"># 查看使用brew安装的服务列表 brew services run formula|--all # 启动服务（仅启动不注册） brew services start formula|--all # 启动服务，并注册 brew services stop formula|--all # 停止服务，并取消注册 brew services restart formula|--all # 重启服务，并注册</span></span><br></pre></td></tr></table></figure>
 
-            
-        </div>
+      
     </div>
 
-    <div class="post-tags">
-        
-        
-    </div>
-
-    <a href="/2024/10/16/DevTool-01-HomeBrew/02-常用命令/ " class="go-post">
-        阅读全文
-    </a>
-</div>
-
-
-             
-<div class="page-current">
-
-    <div class="prev">
-        
-    </div>
-
-    <div class="page-index">
-
-        
-
-        <span class="current">
-            1
-        </span>
-
-        
-
-    </div>
-
-    <div class="next">
-        
-    </div>
-
-</div>
-
-        </div>
-    </div>
     
-    <div id="home-card">
-        <a-affix :offset-top="card_top">
-    <a-card class="card-style" style="width: 300px">
-        <div class="avatar">
-            <img src="images/avatar.png " alt="头像">
-        </div>
-        <div class="name">
-            John Doe
-        </div>
-        <div class="descriptions">
-            
-            <div class="description">
-                正しさなんてもの
-            </div>
-            
-            <div class="description">
-                人のモノサシによって変わる
-            </div>
-            
-        </div>
-        <div class="icon-links">
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/korilin">
-
-                    
-                    <a-icon type="github"
-                        theme="filled" />
-                    
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://twitter.com/korilin_dev">
-
-                    
-                    <a-icon type="twitter"
-                        theme="" />
-                    
-                </a>
-            </span>
-            
-        </div>
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://en.korilin.com">
-                    英文技术博客
-                </a>
-            </div>
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://jp.korilin.com">
-                    日语记录博客
-                </a>
-            </div>
-            
-        </div>
-    </a-card>
-</a-affix>
-    </div>
     
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 </div>
-                     
-<footer id="footer">
-    <div class="footer-wrap">
-        <div>
-            © 2018 - 2024 Hexo
-            <span class="footer-icon">
-                <a-icon type="flag" theme="filled" /></span>
-            @John Doe
-        </div>
-        <div></div>
-        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
-                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
-        
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">MrStitch024</span>
+  </div>
+
     </div>
+  </footer>
 
-</footer>
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
 
-<script src="/js/highlight.min.js"></script>
-<script src="/js/particle.js"></script>
-                </div>
-            </div>
-        </transition>
-    </div>
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <script>
-    new Vue({
-        el: "#layout",
-        data: {
-            show_page: false,
-            onload_menu: false,
-            menu_show: false,
-            card_top: 100
-        },
-        created: function () {
-            var that = this
-            window.onload = function () {
-                that.show_page = true
-                document.getElementById("loadcontent").style.opacity = 0
-                setTimeout(function () {
-                    document.getElementById("loadleft").style.width = 0
-                    document.getElementById("loadright").style.width = 0
-                }, 300)
-                setTimeout(function () {
-                    document.getElementById("loading").style = "display:none"
-                }, 600)
-            }
-        },
-        mounted: function () {
-            var that = this
-            window.addEventListener('scroll', function (e) {
-                that.menu_show = false
-            })
-        },
-        methods: {
-            home_click: function () {
-                window.scrollTo({
-                    top: window.innerHeight - 80,
-                    behavior: "smooth",
-                });
-            }
-        }
-    })
-</script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
 
 </body>
-
 </html>
