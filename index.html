@@ -128,6 +128,10 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">tags</span>
@@ -163,7 +167,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/19/Template/Hexo/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/d3bf6c3a0e7e.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mrstitch024.png">
@@ -181,7 +185,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/19/Template/Hexo/" class="post-title-link" itemprop="url">[object Object]</a>
+          <a href="/2024/10/d3bf6c3a0e7e.html" class="post-title-link" itemprop="url">02-常用命令</a>
         </h2>
 
         <div class="post-meta-container">
@@ -191,9 +195,17 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2024-10-19 23:29:45 / Modified: 23:34:20" itemprop="dateCreated datePublished" datetime="2024-10-19T23:29:45+08:00">2024-10-19</time>
+      <time title="Created: 2024-10-20 01:01:55" itemprop="dateCreated datePublished" datetime="2024-10-20T01:01:55+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
     </span>
 
   
@@ -206,101 +218,29 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
+          <h3 id="Homebrew-常用命令"><a href="#Homebrew-常用命令" class="headerlink" title="Homebrew 常用命令"></a>Homebrew 常用命令</h3><h4 id="软件搜索"><a href="#软件搜索" class="headerlink" title="软件搜索"></a>软件搜索</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew search TEXT|/REGEX/</span><br></pre></td></tr></table></figure>
 
-    
-    
-    
+<h4 id="查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）"><a href="#查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）" class="headerlink" title="查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）"></a>查看软件相关信息（显示软件的各种信息（包括版本、<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%BA%90%E7%A0%81&spm=1001.2101.3001.7020">源码</a>地址、依赖等等）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+<h4 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install FORMULA|CASK...</span><br></pre></td></tr></table></figure>
 
+<h4 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew uninstall FORMULA|CASK...</span><br></pre></td></tr></table></figure>
 
+<h4 id="查看安装列表"><a href="#查看安装列表" class="headerlink" title="查看安装列表"></a>查看安装列表</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew list [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
+<h4 id="查看包信息"><a href="#查看包信息" class="headerlink" title="查看包信息"></a>查看包信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
-    
+<h4 id="查看哪些包可以更新"><a href="#查看哪些包可以更新" class="headerlink" title="查看哪些包可以更新"></a>查看哪些包可以更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew outdated</span><br></pre></td></tr></table></figure>
 
+<h4 id="更新包-Homebrew-会安装新版本的包，但旧版本依然会保留"><a href="#更新包-Homebrew-会安装新版本的包，但旧版本依然会保留" class="headerlink" title="更新包 Homebrew 会安装新版本的包，但旧版本依然会保留"></a>更新包 Homebrew 会安装新版本的包，但旧版本依然会保留</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew upgrade [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
-<div class="post-block">
-  
-  
+<h4 id="brew-自身更新"><a href="#brew-自身更新" class="headerlink" title="brew 自身更新"></a>brew 自身更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-08-Git/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+<h4 id="清理旧版本和缓存"><a href="#清理旧版本和缓存" class="headerlink" title="清理旧版本和缓存"></a>清理旧版本和缓存</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cleanup <span class="comment"># 清理所有包的旧版本 brew cleanup [FORMULA ...] # 清理指定包的旧版本 brew cleanup -n # 查看可清理的旧版本包，不执行实际操作</span></span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
+<h4 id="锁定不想更新的包"><a href="#锁定不想更新的包" class="headerlink" title="锁定不想更新的包"></a>锁定不想更新的包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew pin [FORMULA ...] <span class="comment"># 锁定某个包 brew unpin [FORMULA ...] # 取消锁定 tips：因为update会一次更新所有的包的，当我们想忽略的时候可以使用这个命令</span></span><br></pre></td></tr></table></figure>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-08-Git/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 12:22:37" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:37+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:39" itemprop="dateModified" datetime="2024-10-19T23:36:39+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>版本控制工具</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
-
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>bash环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export GIT_HOME=/opt/homebrew/Cellar/git/2.45.2&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">echo &#x27;export PATH=$PATH:$GIT_HOME/bin&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">source~/.bash_profile</span><br></pre></td></tr></table></figure>
-
-<p>zsh环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export GIT_HOME=/opt/homebrew/Cellar/git/2.45.2&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export PATH=$PATH:$GIT_HOME/bin&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><p>设置本地git的用户名和邮箱</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name xxx </span><br><span class="line">git config --global user.email xxx</span><br></pre></td></tr></table></figure>
-
-<hr>
+<h4 id="软件服务管理"><a href="#软件服务管理" class="headerlink" title="软件服务管理"></a>软件服务管理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services list <span class="comment"># 查看使用brew安装的服务列表 brew services run formula|--all # 启动服务（仅启动不注册） brew services start formula|--all # 启动服务，并注册 brew services stop formula|--all # 停止服务，并取消注册 brew services restart formula|--all # 重启服务，并注册</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -327,7 +267,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-07-Nginx/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/809144ca6aef.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mrstitch024.png">
@@ -345,7 +285,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-07-Nginx/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
+          <a href="/2024/10/809144ca6aef.html" class="post-title-link" itemprop="url">01-安装及配置</a>
         </h2>
 
         <div class="post-meta-container">
@@ -356,566 +296,16 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2024-10-17 12:22:35" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:35+08:00">2024-10-17</time>
+      <time title="Created: 2024-10-20 01:01:00" itemprop="dateCreated datePublished" datetime="2024-10-20T01:01:00+08:00">2024-10-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:35" itemprop="dateModified" datetime="2024-10-19T23:36:35+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>代理web服务器</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://nginx.org/">https://nginx.org/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nginx</span><br></pre></td></tr></table></figure>
-
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-06-Redis/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-06-Redis/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 12:22:31" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:31+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:32" itemprop="dateModified" datetime="2024-10-19T23:36:32+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>远程字典服务</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure>
-
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-05-MySql/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-05-MySql/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 12:22:29" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:29+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:28" itemprop="dateModified" datetime="2024-10-19T23:36:28+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>关系型数据库管理系统</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p> <a target="_blank" rel="noopener" href="https://www.mysql.com/">https://www.mysql.com/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install mysql</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-04-Node/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-04-Node/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 12:22:27" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:27+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:25" itemprop="dateModified" datetime="2024-10-19T23:36:25+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>node(自带npm) 基于Chrome V8引擎的JavaScript运行环境</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>打开.zshrc文件。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open .zshrc</span><br></pre></td></tr></table></figure>
-
-<p>配置Homebrew安装下的配置环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">node</span></span><br><span class="line"> export PATH=&quot;/usr/local/opt/node@&lt;version&gt;/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
-
-<p>终端中运行以下命令使更改生效</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-03-Mavan/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-03-Mavan/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 12:13:48" itemprop="dateCreated datePublished" datetime="2024-10-17T12:13:48+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:21" itemprop="dateModified" datetime="2024-10-19T23:36:21+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>项目构建工具&#x2F;依赖管理工具</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://maven.apache.org/">https://maven.apache.org/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install maven</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>查看maven安装路径</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where mvn</span><br></pre></td></tr></table></figure>
-
-<p> bash环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export MAVEN_HOME=/Users/dpf/software/apache-maven-3.6.2&#x27; &gt;&gt; ~/.bash_profile </span><br><span class="line">echo &#x27;export PATH=$PATH:$MAVEN_HOME/bin&#x27; &gt;&gt; ~/.bash_profile </span><br><span class="line">source ~/.bash_profile </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>zsh环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export MAVEN_HOME=/Users/dpf/software/apache-maven-3.6.2&#x27; &gt;&gt; ~/.zshrc </span><br><span class="line">echo &#x27;export PATH=$PATH:$MAVEN_HOME/bin&#x27; &gt;&gt; ~/.zshrc </span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><p>配置settings.xml</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open /opt/homebrew/Cellar/mavan</span><br></pre></td></tr></table></figure>
-
-<p>创建本地repository</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>本地的repository的位置<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>在 mirrors 标签下配置国内阿里云镜像</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>配置idea中的maven</p>
-<ol>
-<li>打开IntelliJ IDEA -&gt; Preference</li>
-<li>搜索maven, 更改Maven home path 和相应的setting 文件<br><img src="https://i-blog.csdnimg.cn/blog_migrate/fd86fd0394554d47e670441ed2f1896b.png" alt="请添加图片描述"></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-02-Jdk/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-02-Jdk/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 12:10:37" itemprop="dateCreated datePublished" datetime="2024-10-17T12:10:37+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:36:15" itemprop="dateModified" datetime="2024-10-19T23:36:15+08:00">2024-10-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <hr>
-<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>Java 编程语言的开发工具包</p>
-<hr>
-<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://www.oracle.com/">https://www.oracle.com/</a></p>
-<hr>
-<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask temurin</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>查看java安装路径</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where java</span><br></pre></td></tr></table></figure>
-
-<p>bash环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">echo &#x27;export PATH=$PATH:$JAVA_HOME/bin&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
-
-<p> zsh环境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export PATH=$PATH:$JAVA_HOME/bin&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/17/Devtool/DevTool-01-HomeBrew/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/mrstitch024.png">
-      <meta itemprop="name" content="MrStitch024">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MrStitch Blog">
-      <meta itemprop="description" content="My love chulia❤️">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | MrStitch Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/17/Devtool/DevTool-01-HomeBrew/01-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">[object Object]</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2024-10-17 11:10:45" itemprop="dateCreated datePublished" datetime="2024-10-17T11:10:45+08:00">2024-10-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-10-19 23:35:57" itemprop="dateModified" datetime="2024-10-19T23:35:57+08:00">2024-10-19</time>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
     </span>
 
   
@@ -992,7 +382,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/16/Devtool/DevTool-01-HomeBrew/02-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/cd925c79c1bb.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/mrstitch024.png">
@@ -1010,7 +400,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/10/16/Devtool/DevTool-01-HomeBrew/02-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Untitled</a>
+          <a href="/2024/10/cd925c79c1bb.html" class="post-title-link" itemprop="url"><% tp.file.title %></a>
         </h2>
 
         <div class="post-meta-container">
@@ -1022,7 +412,16 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-10-16 02:38:59 / Modified: 17:40:37" itemprop="dateCreated datePublished" datetime="2024-10-16T02:38:59+08:00">2024-10-16</time>
+      <time title="Created: 2024-10-20 00:58:07 / Modified: 01:00:56" itemprop="dateCreated datePublished" datetime="2024-10-20T00:58:07+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Template/" itemprop="url" rel="index"><span itemprop="name">Template</span></a>
+        </span>
     </span>
 
   
@@ -1035,29 +434,716 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="Homebrew-常用命令"><a href="#Homebrew-常用命令" class="headerlink" title="Homebrew 常用命令"></a>Homebrew 常用命令</h3><h4 id="软件搜索"><a href="#软件搜索" class="headerlink" title="软件搜索"></a>软件搜索</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew search TEXT|/REGEX/</span><br></pre></td></tr></table></figure>
+          
+      
+    </div>
 
-<h4 id="查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）"><a href="#查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）" class="headerlink" title="查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）"></a>查看软件相关信息（显示软件的各种信息（包括版本、<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%BA%90%E7%A0%81&spm=1001.2101.3001.7020">源码</a>地址、依赖等等）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
+    
+    
+    
 
-<h4 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install FORMULA|CASK...</span><br></pre></td></tr></table></figure>
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
 
-<h4 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew uninstall FORMULA|CASK...</span><br></pre></td></tr></table></figure>
 
-<h4 id="查看安装列表"><a href="#查看安装列表" class="headerlink" title="查看安装列表"></a>查看安装列表</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew list [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
-<h4 id="查看包信息"><a href="#查看包信息" class="headerlink" title="查看包信息"></a>查看包信息</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
-<h4 id="查看哪些包可以更新"><a href="#查看哪些包可以更新" class="headerlink" title="查看哪些包可以更新"></a>查看哪些包可以更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew outdated</span><br></pre></td></tr></table></figure>
+    
 
-<h4 id="更新包-Homebrew-会安装新版本的包，但旧版本依然会保留"><a href="#更新包-Homebrew-会安装新版本的包，但旧版本依然会保留" class="headerlink" title="更新包 Homebrew 会安装新版本的包，但旧版本依然会保留"></a>更新包 Homebrew 会安装新版本的包，但旧版本依然会保留</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew upgrade [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
 
-<h4 id="brew-自身更新"><a href="#brew-自身更新" class="headerlink" title="brew 自身更新"></a>brew 自身更新</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure>
+<div class="post-block">
+  
+  
 
-<h4 id="清理旧版本和缓存"><a href="#清理旧版本和缓存" class="headerlink" title="清理旧版本和缓存"></a>清理旧版本和缓存</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cleanup <span class="comment"># 清理所有包的旧版本 brew cleanup [FORMULA ...] # 清理指定包的旧版本 brew cleanup -n # 查看可清理的旧版本包，不执行实际操作</span></span><br></pre></td></tr></table></figure>
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/08a6fa25e2f0.html">
 
-<h4 id="锁定不想更新的包"><a href="#锁定不想更新的包" class="headerlink" title="锁定不想更新的包"></a>锁定不想更新的包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew pin [FORMULA ...] <span class="comment"># 锁定某个包 brew unpin [FORMULA ...] # 取消锁定 tips：因为update会一次更新所有的包的，当我们想忽略的时候可以使用这个命令</span></span><br></pre></td></tr></table></figure>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
 
-<h4 id="软件服务管理"><a href="#软件服务管理" class="headerlink" title="软件服务管理"></a>软件服务管理</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew services list <span class="comment"># 查看使用brew安装的服务列表 brew services run formula|--all # 启动服务（仅启动不注册） brew services start formula|--all # 启动服务，并注册 brew services stop formula|--all # 停止服务，并取消注册 brew services restart formula|--all # 重启服务，并注册</span></span><br></pre></td></tr></table></figure>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/08a6fa25e2f0.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:22:37" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:37+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:36" itemprop="dateModified" datetime="2024-10-20T01:01:36+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>版本控制工具</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>bash环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export GIT_HOME=/opt/homebrew/Cellar/git/2.45.2&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">echo &#x27;export PATH=$PATH:$GIT_HOME/bin&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">source~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<p>zsh环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export GIT_HOME=/opt/homebrew/Cellar/git/2.45.2&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export PATH=$PATH:$GIT_HOME/bin&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><p>设置本地git的用户名和邮箱</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name xxx </span><br><span class="line">git config --global user.email xxx</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/e4dd9c429b5c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/e4dd9c429b5c.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:22:35" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:35+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:34" itemprop="dateModified" datetime="2024-10-20T01:01:34+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>代理web服务器</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://nginx.org/">https://nginx.org/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nginx</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/85c394dd2d0e.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/85c394dd2d0e.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:22:31" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:31+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:31" itemprop="dateModified" datetime="2024-10-20T01:01:31+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>远程字典服务</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/c877b50daf5a.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/c877b50daf5a.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:22:29" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:29+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:26" itemprop="dateModified" datetime="2024-10-20T01:01:26+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>关系型数据库管理系统</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p> <a target="_blank" rel="noopener" href="https://www.mysql.com/">https://www.mysql.com/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install mysql</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/d9baf77766f0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/d9baf77766f0.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:22:27" itemprop="dateCreated datePublished" datetime="2024-10-17T12:22:27+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:23" itemprop="dateModified" datetime="2024-10-20T01:01:23+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>node(自带npm) 基于Chrome V8引擎的JavaScript运行环境</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>打开.zshrc文件。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open .zshrc</span><br></pre></td></tr></table></figure>
+
+<p>配置Homebrew安装下的配置环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">node</span></span><br><span class="line"> export PATH=&quot;/usr/local/opt/node@&lt;version&gt;/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+
+<p>终端中运行以下命令使更改生效</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/5a5668ddc8a0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/5a5668ddc8a0.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:13:48" itemprop="dateCreated datePublished" datetime="2024-10-17T12:13:48+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:20" itemprop="dateModified" datetime="2024-10-20T01:01:20+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>项目构建工具&#x2F;依赖管理工具</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://maven.apache.org/">https://maven.apache.org/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install maven</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>查看maven安装路径</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where mvn</span><br></pre></td></tr></table></figure>
+
+<p> bash环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export MAVEN_HOME=/Users/dpf/software/apache-maven-3.6.2&#x27; &gt;&gt; ~/.bash_profile </span><br><span class="line">echo &#x27;export PATH=$PATH:$MAVEN_HOME/bin&#x27; &gt;&gt; ~/.bash_profile </span><br><span class="line">source ~/.bash_profile </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>zsh环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export MAVEN_HOME=/Users/dpf/software/apache-maven-3.6.2&#x27; &gt;&gt; ~/.zshrc </span><br><span class="line">echo &#x27;export PATH=$PATH:$MAVEN_HOME/bin&#x27; &gt;&gt; ~/.zshrc </span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><p>配置settings.xml</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open /opt/homebrew/Cellar/mavan</span><br></pre></td></tr></table></figure>
+
+<p>创建本地repository</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>本地的repository的位置<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在 mirrors 标签下配置国内阿里云镜像</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>配置idea中的maven</p>
+<ol>
+<li>打开IntelliJ IDEA -&gt; Preference</li>
+<li>搜索maven, 更改Maven home path 和相应的setting 文件<br><img src="https://i-blog.csdnimg.cn/blog_migrate/fd86fd0394554d47e670441ed2f1896b.png" alt="请添加图片描述"></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/1ce98163eb03.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/mrstitch024.png">
+      <meta itemprop="name" content="MrStitch024">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MrStitch Blog">
+      <meta itemprop="description" content="My love chulia❤️">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | MrStitch Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/10/1ce98163eb03.html" class="post-title-link" itemprop="url">Untitled</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-10-17 12:10:37" itemprop="dateCreated datePublished" datetime="2024-10-17T12:10:37+08:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-20 01:01:16" itemprop="dateModified" datetime="2024-10-20T01:01:16+08:00">2024-10-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Devtool/" itemprop="url" rel="index"><span itemprop="name">Devtool</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <hr>
+<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h2><p>Java 编程语言的开发工具包</p>
+<hr>
+<h2 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h2><p><a target="_blank" rel="noopener" href="https://www.oracle.com/">https://www.oracle.com/</a></p>
+<hr>
+<h2 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask temurin</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>查看java安装路径</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">where java</span><br></pre></td></tr></table></figure>
+
+<p>bash环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">echo &#x27;export PATH=$PATH:$JAVA_HOME/bin&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<p> zsh环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export PATH=$PATH:$JAVA_HOME/bin&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><hr>
 
       
     </div>
