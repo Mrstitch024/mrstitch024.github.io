@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello</title>
+    <url>/:2024/10/20/Hello/</url>
+    <content><![CDATA[<div class="note success"><p>欢迎来到我的博客<br>chulia is my baby.</p>
+</div>
+
+
+]]></content>
+      <categories>
+        <category>Template</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>DevTool-05-MySql安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-05-MySql%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>关系型数据库管理系统</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p> <a href="https://www.mysql.com/">https://www.mysql.com/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install mysql</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><p>拉取Mysql：8.0镜像</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull mysql:8.0</span><br></pre></td></tr></table></figure>
+
+<p>创建并启动Mysql：8.0容器</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run  --restart=always  --name mysql8.0 \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/conf:/etc/mysql/conf.d \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/data:/var/lib/mysql \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/og:/var/log \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/mysql-files:/var/lib/mysql-files \</span><br><span class="line"></span><br><span class="line">-p 3308:3306 \</span><br><span class="line"></span><br><span class="line">-e MYSQL_ROOT_PASSWORD=&#x27;123456&#x27; \</span><br><span class="line"></span><br><span class="line">-d mysql:8.0</span><br></pre></td></tr></table></figure>
+<p>-v映射本地文件<br>-p映射端口</p>
+<hr>
+<hr>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevApp-04-Docker安装及配置</title>
+    <url>/:2024/10/20/Devapp-DevApp-04-Docker%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>创建和使用 <a href="https://www.redhat.com/zh/topics/containers-v1">Linux® 容器</a>的容器化技术</p>
+<hr>
+<h1 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h1><p><a href="https://www.docker.com/">https://www.docker.com/</a></p>
+<hr>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install --cask docker</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>安装完成之后，双击Docker图标即可运行Docker</p>
+<hr>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>拉取Mysql：8.0镜像</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull mysql:8.0</span><br></pre></td></tr></table></figure>
+
+<p>创建并启动Mysql：8.0容器</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker run  --restart=always  --name mysql8.0 \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/conf:/etc/mysql/conf.d \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/data:/var/lib/mysql \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/og:/var/log \</span><br><span class="line"></span><br><span class="line">-v /Users/mrstitch/DevTools/DockerData/Mysql/Mysql8/mysql-files:/var/lib/mysql-files \</span><br><span class="line"></span><br><span class="line">-p 3308:3306 \</span><br><span class="line"></span><br><span class="line">-e MYSQL_ROOT_PASSWORD=&#x27;123456&#x27; \</span><br><span class="line"></span><br><span class="line">-d mysql:8.0</span><br></pre></td></tr></table></figure>
+
+<hr>
+]]></content>
+      <categories>
+        <category>Devapp</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevApp-03-Navicat Premium安装及配置</title>
+    <url>/:2024/10/20/Devapp-DevApp-03-Navicat-Premium%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>数据库图形化工具</p>
+<hr>
+<h1 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h1><p><a href="https://www.navicat.com/products/navicat-premium">https://www.navicat.com/products/navicat-premium</a></p>
+<hr>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install --cask navicat-premium</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><hr>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><hr>
+]]></content>
+      <categories>
+        <category>Devapp</category>
+      </categories>
+      <tags>
+        <tag>navicat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevApp-02-Intellij IDEA安装及配置</title>
+    <url>/:2024/10/20/Devapp-DevApp-02-Intellij-IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>java开发工具</p>
+<hr>
+<h1 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h1><p><a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
+<hr>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install --cask intellij-idea</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><hr>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p>常用的Mac版IntelliJ IDEA快捷键：</p>
+<ol>
+<li><p>查找和替换：</p>
+<ul>
+<li>查找：Command + F</li>
+<li>替换：Command + R</li>
+<li>在项目中查找：Command + Shift + F</li>
+<li>在项目中替换：Command + Shift + R</li>
+</ul>
+</li>
+<li><p>编辑：</p>
+<ul>
+<li>复制行：Command + D</li>
+<li>删除行：Command + Delete</li>
+<li>移动行：Option + Shift + Up&#x2F;Down</li>
+<li>注释&#x2F;取消注释：Command + &#x2F;</li>
+<li>块注释&#x2F;取消块注释：Command + Option + &#x2F;</li>
+</ul>
+</li>
+<li><p>导航：</p>
+<ul>
+<li>跳转到类：Command + O</li>
+<li>跳转到文件：Command + Shift + O</li>
+<li>跳转到行：Command + G</li>
+<li>跳转到定义：Command + B 或 Command + Click</li>
+<li>显示类结构：Command + F12</li>
+</ul>
+</li>
+<li><p><a href="https://so.csdn.net/so/search?q=%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90&spm=1001.2101.3001.7020">代码生成</a>：</p>
+<ul>
+<li>生成代码（例如，get&#x2F;set方法，构造函数等）：Command + N</li>
+<li>重构代码：Control + T</li>
+</ul>
+</li>
+<li><p>运行和调试：</p>
+<ul>
+<li>运行：Control + R</li>
+<li>调试：Control + D</li>
+<li>设置&#x2F;取消断点：Command + F8</li>
+</ul>
+</li>
+<li><p>其他：</p>
+<ul>
+<li>打开&#x2F;关闭项目视图：Command + 1</li>
+<li>打开&#x2F;关闭控制台：Command + 4</li>
+<li>打开设置：Command + ,</li>
+</ul>
+</li>
+</ol>
+<p>以上只是一部分常用的快捷键，IntelliJ IDEA还有许多其他的快捷键可以使用。你可以在IntelliJ IDEA的”Preferences” -&gt; “Keymap”中查看和自定义快捷键。</p>
+<hr>
+]]></content>
+      <categories>
+        <category>Devapp</category>
+      </categories>
+      <tags>
+        <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevApp-01-VSCode安装及配置</title>
+    <url>/:2024/10/20/Devapp-DevApp-01-VSCode%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>微软开发且跨平台的免费源代码编辑器</p>
+<hr>
+<h1 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h1><p><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<hr>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install --cask visual-studio-code</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><hr>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><hr>
+]]></content>
+      <categories>
+        <category>Devapp</category>
+      </categories>
+      <tags>
+        <tag>vscoe</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-08-Git安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-08-Git%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>版本控制工具</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://git-scm.com/">https://git-scm.com/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><p>bash环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;export GIT_HOME=/opt/homebrew/Cellar/git/2.45.2&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">echo &#x27;export PATH=$PATH:$GIT_HOME/bin&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">source~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<p>zsh环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;export GIT_HOME=/opt/homebrew/Cellar/git/2.45.2&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export PATH=$PATH:$GIT_HOME/bin&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><p>设置本地git的用户名和邮箱</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name xxx </span><br><span class="line">git config --global user.email xxx</span><br></pre></td></tr></table></figure>
+
+<hr>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-07-Nginx安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-07-Nginx%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>代理web服务器</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://nginx.org/">https://nginx.org/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install nginx</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><hr>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-06-Redis安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-06-Redis%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>远程字典服务</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://redis.io/">https://redis.io/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install redis</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><hr>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-04-Node安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-04-Node%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>node(自带npm) 基于Chrome V8引擎的JavaScript运行环境</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://nodejs.org/">https://nodejs.org/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><p>打开.zshrc文件。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">open .zshrc</span><br></pre></td></tr></table></figure>
+
+<p>配置Homebrew安装下的配置环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">node</span></span><br><span class="line"> export PATH=&quot;/usr/local/opt/node@&lt;version&gt;/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+
+<p>终端中运行以下命令使更改生效</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><hr>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-03-Mavan-安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-03-Mavan-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>项目构建工具&#x2F;依赖管理工具</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://maven.apache.org/">https://maven.apache.org/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install maven</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><p>查看maven安装路径</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">where mvn</span><br></pre></td></tr></table></figure>
+
+<p> bash环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;export MAVEN_HOME=/Users/dpf/software/apache-maven-3.6.2&#x27; &gt;&gt; ~/.bash_profile </span><br><span class="line">echo &#x27;export PATH=$PATH:$MAVEN_HOME/bin&#x27; &gt;&gt; ~/.bash_profile </span><br><span class="line">source ~/.bash_profile </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>zsh环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;export MAVEN_HOME=/Users/dpf/software/apache-maven-3.6.2&#x27; &gt;&gt; ~/.zshrc </span><br><span class="line">echo &#x27;export PATH=$PATH:$MAVEN_HOME/bin&#x27; &gt;&gt; ~/.zshrc </span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><p>配置settings.xml</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">open /opt/homebrew/Cellar/mavan</span><br></pre></td></tr></table></figure>
+
+<p>创建本地repository</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>本地的repository的位置<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在 mirrors 标签下配置国内阿里云镜像</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>        </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>配置idea中的maven</p>
+<ol>
+<li>打开IntelliJ IDEA -&gt; Preference</li>
+<li>搜索maven, 更改Maven home path 和相应的setting 文件<br><img src="https://i-blog.csdnimg.cn/blog_migrate/fd86fd0394554d47e670441ed2f1896b.png" alt="请添加图片描述"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>mavan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-02-Jdk-安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-02-Jdk-%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>Java 编程语言的开发工具包</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://www.oracle.com/">https://www.oracle.com/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install --cask temurin</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><p>查看java安装路径</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">where java</span><br></pre></td></tr></table></figure>
+
+<p>bash环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">echo &#x27;export PATH=$PATH:$JAVA_HOME/bin&#x27; &gt;&gt; ~/.bash_profile</span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<p> zsh环境</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo &#x27;export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_341.jdk/Contents/Home&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">echo &#x27;export PATH=$PATH:$JAVA_HOME/bin&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h1><hr>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>jdk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DevTool-01-HomeBrew安装及配置</title>
+    <url>/:2024/10/20/Devtool-DevTool-01-HomeBrew%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h1><p>开源的包管理器，专为macOS 设计，用于简化在macOS 上安装、更新和管理软件的过程</p>
+<hr>
+<h1 id="2-官网"><a href="#2-官网" class="headerlink" title="2.官网"></a>2.官网</h1><p><a href="https://brew.sh/">https://brew.sh/</a></p>
+<hr>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><p> 检查电脑中有无HomeBrew的命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew -v </span><br></pre></td></tr></table></figure>
+
+<p>如果终端打印了版本信息的话证明电脑中存在HomeBrew，如果打印未知命令的话代表电脑中没有HomeBrew环境。</p>
+<p>HomeBrew也提供了一键安装的脚本以供用户一键进行安装：</p>
+<p> 如果需要重新安装请先卸载HomeBrew：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p> 一键安装的命令(可能需要Science On The Net)：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2><h1 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h1><h2 id="HomeBrew换源命令"><a href="#HomeBrew换源命令" class="headerlink" title="HomeBrew换源命令"></a>HomeBrew换源命令</h2><p>HomeBrew默认的源在国外，平时正常使用非常的慢因此我们可以将其替换为国内源</p>
+<p>· 查看当前源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="string">&quot;<span class="subst">$(brew --repo)</span>&quot;</span> &amp;&amp; git remote -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="替换为清华源-不推荐"><a href="#替换为清华源-不推荐" class="headerlink" title="替换为清华源(不推荐)"></a>替换为清华源(不推荐)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git -C <span class="string">&quot;<span class="subst">$(brew --repo)</span>&quot;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line">$ git -C <span class="string">&quot;<span class="subst">$(brew --repo homebrew/core)</span>&quot;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line">$ git -C <span class="string">&quot;<span class="subst">$(brew --repo homebrew/cask)</span>&quot;</span> remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line">$ <span class="built_in">source</span> ~/.zshrc</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$ <span class="built_in">echo</span> <span class="string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&#x27;</span> &gt;&gt; ~/.bash_profile</span><br><span class="line">$ <span class="built_in">source</span> ~/.bash_profile</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$ brew update</span><br></pre></td></tr></table></figure>
+
+<h3 id="替换为中科大源（推荐）"><a href="#替换为中科大源（推荐）" class="headerlink" title="替换为中科大源（推荐）"></a>替换为中科大源（推荐）</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git -C <span class="string">&quot;<span class="subst">$(brew --repo)</span>&quot;</span> remote set-url origin https://mirrors.ustc.edu.cn/brew.git</span><br><span class="line">git -C <span class="string">&quot;<span class="subst">$(brew --repo homebrew/core)</span>&quot;</span> remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git</span><br><span class="line">git -C <span class="string">&quot;<span class="subst">$(brew --repo homebrew/cask)</span>&quot;</span> remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles&#x27;</span> &gt;&gt; ~/.bash_profile</span><br><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br><span class="line"></span><br><span class="line">brew update</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="5-备注"><a href="#5-备注" class="headerlink" title="5.备注"></a>5.备注</h2><h2 id="附上常用的HomeBrew指令"><a href="#附上常用的HomeBrew指令" class="headerlink" title="附上常用的HomeBrew指令"></a>附上常用的HomeBrew指令</h2><p>想要查找HomeBrew的用户帮助界面可以输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew -h </span><br><span class="line">brew <span class="built_in">help</span></span><br></pre></td></tr></table></figure>
+
+<p>查看HomeBrew的版本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew -v</span><br></pre></td></tr></table></figure>
+
+<p>软件搜索</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew search TEXT|/REGEX/</span><br></pre></td></tr></table></figure>
+
+<p>查看软件相关信息（显示软件的各种信息（包括版本、源码地址、依赖等等）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
+
+<p> 安装软件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install FORMULA|CASK...</span><br></pre></td></tr></table></figure>
+
+<p>卸载软件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew uninstall FORMULA|CASK...</span><br></pre></td></tr></table></figure>
+
+<p>查看安装列表</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew list [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
+
+<p>查看包信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew info [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
+
+<p>查看哪些包可以更新</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew outdated</span><br></pre></td></tr></table></figure>
+
+<p> 更新包 Homebrew 会安装新版本的包，但旧版本依然会保留</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew upgrade [FORMULA|CASK...]</span><br></pre></td></tr></table></figure>
+
+<p>brew 自身更新</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure>
+
+<p>清理旧版本和缓存</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew cleanup </span><br></pre></td></tr></table></figure>
+
+<p>锁定不想更新的包</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew pin [FORMULA ...] </span><br></pre></td></tr></table></figure>
+
+<p>软件服务管理</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew services list </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Devtool</category>
+      </categories>
+      <tags>
+        <tag>homebrew</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;% tp.file.title %&gt;</title>
+    <url>/:2024/10/20/Template-Hexo/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Template</category>
+      </categories>
+  </entry>
+</search>
