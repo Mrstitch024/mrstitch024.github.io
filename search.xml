@@ -5,8 +5,7 @@
     <url>/:2024/10/20/Hello/</url>
     <content><![CDATA[<div class="note success"><p>欢迎来到我的博客<br>chulia is my baby.</p>
 </div>
-
-
+<p><img src="https://raw.githubusercontent.com/Mrstitch024/picgo/main/HelloLight_Mac.png"></p>
 ]]></content>
       <categories>
         <category>Template</category>
@@ -318,7 +317,7 @@
 <p>配置idea中的maven</p>
 <ol>
 <li>打开IntelliJ IDEA -&gt; Preference</li>
-<li>搜索maven, 更改Maven home path 和相应的setting 文件<br><img src="https://i-blog.csdnimg.cn/blog_migrate/fd86fd0394554d47e670441ed2f1896b.png" alt="请添加图片描述"></li>
+<li>搜索maven, 更改Maven home path 和相应的setting 文件<br><img src="https://raw.githubusercontent.com/Mrstitch024/picgo/main/202410211513586.png"></li>
 </ol>
 ]]></content>
       <categories>
